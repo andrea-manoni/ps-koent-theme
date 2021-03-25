@@ -1,10 +1,10 @@
-name: classic
-display_name: Classic
+name: ps-koent-theme
+display_name: Prestashop Koent Theme
 version: 1.0.0
 author:
-  name: "PrestaShop Team"
-  email: "pub@prestashop.com"
-  url: "https://www.prestashop.com"
+  name: "Andrea Manoni"
+  email: "andrea.manoni@koent.it"
+  url: "https://koent.it"
 
 meta:
   compatibility:
@@ -54,7 +54,13 @@ global_settings:
    to_enable:
      - ps_linklist
   hooks:
+    custom_hooks:
+      - name: displayLogoAfter
+        title: displayLogoAfter
+        description: Add a widget area after the logo
     modules_to_hook:
+      displayLogoAfter:
+        - testModule
       displayAfterBodyOpeningTag:
         - blockreassurance
       displayNavFullWidth:
@@ -97,6 +103,8 @@ global_settings:
         - ps_featuredproducts
       displayCrossSellingShoppingCart:
         - ps_featuredproducts
+    
+
 
   image_types:
     cart_default:
