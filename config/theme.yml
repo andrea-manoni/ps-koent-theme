@@ -54,13 +54,7 @@ global_settings:
    to_enable:
      - ps_linklist
   hooks:
-    custom_hooks:
-      - name: displayLogoAfter
-        title: displayLogoAfter
-        description: Add a widget area after the logo
     modules_to_hook:
-      displayLogoAfter:
-        - testModule
       displayAfterBodyOpeningTag:
         - blockreassurance
       displayNavFullWidth:
